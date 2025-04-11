@@ -1,0 +1,172 @@
+{
+  "products": [
+    {
+      "name": "Áo phông nam cổ V cotton",
+      "price": 200000,
+      "image": "https://lados.vn/wp-content/uploads/2024/07/z5625418105785-f84f4ca9deba934a353bf32f85697ff7-1720759573945.jpeg",
+      "desc": "Chất liệu cotton interlock 250gsm co giãn tốt, mặc cực thoải mái, thấm hút mồ hôi tốt",
+      "id": 2
+    },
+    {
+      "name": "Áo Polo nam đẹp màu đen",
+      "price": 300000,
+      "image": "https://bizweb.dktcdn.net/100/287/440/products/ao-polo-nam-dep-mau-den-2.jpg?v=1627740423777",
+      "desc": "Áo polo nam đẹp màu đen High Low là mẫu áo thun cổ bẻ lịch sự nhưng mang hơi thở hiện đại và năng động đến từ vị trí thiết kế khóa kéo thay thế nút cài truyền thống.",
+      "id": 3
+    },
+    {
+      "name": "Áo thun nam ngắn tay ",
+      "price": 250000,
+      "image": "https://pos.nvncdn.com/2865a9-85186/ps/20240503_nIc4A4BXDb.jpeg",
+      "desc": "Áo  nam đẹp  High Low là mẫu áo thun  lịch sự .",
+      "id": 4
+    },
+    {
+      "name": "Áo Sơ Mi Diễu Ly Chống Nhăn Wrinkle X",
+      "price": 550000,
+      "image": "https://4men.com.vn/images/thumbs/2024/10/ao-so-mi-theu-2-soc-la-co-form-slimfit-sm160-18791-slide-products-67065ad84f300.jpg",
+      "desc": "Thiết kế sơ mi công sở hiện đại với phom slimfit gọn gàng, cổ cutaway thanh lịch và bề mặt trơn trang nhã. Chi tiết diễu ly 1mm chạy dọc hai bên thân tạo hiệu ứng nổi khối nhẹ, kết hợp chữ thêu “Peakhours”",
+      "id": 5
+    },
+    {
+      "name": "Quần Jean Trơn Form Slimfit QJ112",
+      "price": 450000,
+      "image": "https://4men.com.vn/images/thumbs/2025/03/quan-jean-theu-chu-eclectic-prep-form-regular-qj109-19136-slide-products-67db9187454dd.jpg",
+      "desc": "Chất liệu Jeans (98% cotton, 2% spandex) co giãn tốt, mặc cực thoải mái .",
+      "id": 6
+    },
+    {
+      "name": "Quần Jeans Xanh Nhạt",
+      "price": 560000,
+      "image": "https://4men.com.vn/images/thumbs/2024/06/quan-jeans-xanh-den-theu-4men-form-regular-qj101-18592-slide-products-66710c63e4b78.jpg",
+      "desc": " Chất liệu: Jean  - Họa tiết: Wash laser - Form: Slimfit - Màu: Xanh nhạt",
+      "id": 7
+    },
+    {
+      "name": "Quần Tây Sidetab ",
+      "price": 450000,
+      "image": "https://4men.com.vn/images/thumbs/2024/10/quan-tay-sidetab-1-ben-form-regular-qt062-mau-be-18786-slide-products-6703ae986f254.jpg",
+      "desc": "Quần Tây Sidetab 1 Bên Form Regular QT062",
+      "id": 8
+    },
+    {
+      "name": "Quần Kaki Trơn Túi",
+      "price": 350000,
+      "image": "https://4men.com.vn/images/thumbs/2023/05/quan-kaki-tron-tui-ra-form-slimfit-qk021-mau-reu-18032-slide-products-645c8d1937a77.jpg",
+      "desc": "Chất liệu cotton interlock 250gsm co giãn tốt, mặc cực thoải mái, thấm hút mồ hôi tốt",
+      "id": 9
+    }
+  ],
+  "users": [
+    {
+      "email": "duy1@gmail.com",
+      "password": "$2a$10$KImF8PBT.wsW.82rqEY9FuvyrfOtOXrgZVFDB6ilCFEV9fdtDaceK",
+      "role": "user",
+      "id": 11
+    },
+    {
+      "email": "duy3atv@gmail.com",
+      "password": "$2a$10$uDYlenCRoL7bqzHmkEwJqeFAjkCUziqgKXq5r/U..nUUCnezbesNG",
+      "role": "admin",
+      "id": 2
+    },
+    {
+      "email": "hieu@gmail.com",
+      "password": "$2a$10$ZNj.cSKt7huCayTcZhIkAutAOdKLl6y7ODvnvSecf2S.4eCvYUjge",
+      "role": "user",
+      "id": 12
+    },
+    {
+      "email": "hieu123@gmail.com",
+      "password": "$2a$10$kwl54AxdyKq91NyqUZjtqeYjXYk3ZigNInEGDos2zBNKvv8cFQeTO",
+      "role": "admin",
+      "id": 13
+    }
+  ],
+  "order": [
+    {
+      "id": "ORD1744411594644",
+      "customerName": "hieu",
+      "address": "Hoài đức",
+      "phone": "0788064512",
+      "paymentMethod": "cod",
+      "total": 300000,
+      "items": [
+        {
+          "name": "Áo Polo nam đẹp màu đen",
+          "price": 300000,
+          "image": "https://bizweb.dktcdn.net/100/287/440/products/ao-polo-nam-dep-mau-den-2.jpg?v=1627740423777",
+          "desc": "Áo polo nam đẹp màu đen High Low là mẫu áo thun cổ bẻ lịch sự nhưng mang hơi thở hiện đại và năng động đến từ vị trí thiết kế khóa kéo thay thế nút cài truyền thống.",
+          "id": 3,
+          "quantity": 1
+        }
+      ],
+      "status": "success",
+      "totalPrice": 0
+    },
+    {
+      "id": "ORD1744411718723",
+      "customerName": "hieu",
+      "address": "Hoài đức",
+      "phone": "0788064512",
+      "paymentMethod": "cod",
+      "total": 450000,
+      "items": [
+        {
+          "name": "Quần Jean Trơn Form Slimfit QJ112",
+          "price": 450000,
+          "image": "https://4men.com.vn/images/thumbs/2025/03/quan-jean-theu-chu-eclectic-prep-form-regular-qj109-19136-slide-products-67db9187454dd.jpg",
+          "desc": "Chất liệu Jeans (98% cotton, 2% spandex) co giãn tốt, mặc cực thoải mái .",
+          "id": 6,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "ORD1744413260537",
+      "customerName": "hieu",
+      "address": "Hoài đức",
+      "phone": "0788064512",
+      "paymentMethod": "cod",
+      "total": 450000,
+      "items": [
+        {
+          "name": "Quần Jean Trơn Form Slimfit QJ112",
+          "price": 450000,
+          "image": "https://4men.com.vn/images/thumbs/2025/03/quan-jean-theu-chu-eclectic-prep-form-regular-qj109-19136-slide-products-67db9187454dd.jpg",
+          "desc": "Chất liệu Jeans (98% cotton, 2% spandex) co giãn tốt, mặc cực thoải mái .",
+          "id": 6,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "ORD1744413305765",
+      "customerName": "hieu",
+      "address": "Hoài đức",
+      "phone": "0788064512",
+      "paymentMethod": "cod",
+      "total": 0,
+      "items": [],
+      "status": "canceled"
+    },
+    {
+      "id": "ORD1744413337999",
+      "customerName": "hieu",
+      "address": "Hoài đức",
+      "phone": "0788064512",
+      "paymentMethod": "cod",
+      "total": 560000,
+      "items": [
+        {
+          "name": "Quần Jeans Xanh Nhạt",
+          "price": 560000,
+          "image": "https://4men.com.vn/images/thumbs/2024/06/quan-jeans-xanh-den-theu-4men-form-regular-qj101-18592-slide-products-66710c63e4b78.jpg",
+          "desc": " Chất liệu: Jean  - Họa tiết: Wash laser - Form: Slimfit - Màu: Xanh nhạt",
+          "id": 7,
+          "quantity": 1
+        }
+      ]
+    }
+  ]
+}
