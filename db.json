@@ -59,18 +59,6 @@
   ],
   "users": [
     {
-      "email": "duy1@gmail.com",
-      "password": "$2a$10$KImF8PBT.wsW.82rqEY9FuvyrfOtOXrgZVFDB6ilCFEV9fdtDaceK",
-      "role": "user",
-      "id": 11
-    },
-    {
-      "email": "duy3atv@gmail.com",
-      "password": "$2a$10$uDYlenCRoL7bqzHmkEwJqeFAjkCUziqgKXq5r/U..nUUCnezbesNG",
-      "role": "admin",
-      "id": 2
-    },
-    {
       "email": "hieu@gmail.com",
       "password": "$2a$10$ZNj.cSKt7huCayTcZhIkAutAOdKLl6y7ODvnvSecf2S.4eCvYUjge",
       "role": "user",
