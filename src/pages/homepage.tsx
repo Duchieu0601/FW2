@@ -4,13 +4,12 @@ import { useList } from "../hooks";
 import { ShoppingCartOutlined } from "@ant-design/icons";
 import { useCart } from "../contexts/cartContext";
 
-
 export const Homepage = () => {
   const { data: products } = useList({ resource: "products" });
-  const { addToCart } = useCart(); // Hook để thêm sản phẩm vào giỏ hàng
+  const { addToCart } = useCart();
 
   const handleAddToCart = (product: any) => {
-    addToCart(product); // Gọi hàm addToCart từ context
+    addToCart(product);
   };
 
   return (
@@ -20,9 +19,22 @@ export const Homepage = () => {
           <Col span={6} key={product.id}>
             <Card
               hoverable
-              cover={<img alt={product.name} src={product.image} />}
+              cover={
+                <img
+                  alt={product.name}
+                  src={product.image}
+                  style={{
+                    height: 300,
+                    width: "100%",
+                    objectFit: "cover",
+                  }}
+                />
+              }
             >
-              <Card.Meta title={product.name} description={`${product.price} VND`} />
+              <Card.Meta
+                title={product.name}
+                description={`${product.price.toLocaleString()} đồng`}
+              />
               <div style={{ marginTop: 10 }}>
                 <Link to={`/product/${product.id}`}>
                   <Button type="primary" block>
@@ -34,7 +46,7 @@ export const Homepage = () => {
                   block
                   icon={<ShoppingCartOutlined />}
                   style={{ marginTop: 10 }}
-                  onClick={() => handleAddToCart(product)} // Gọi hàm khi click vào icon
+                  onClick={() => handleAddToCart(product)}
                 >
                   Thêm vào giỏ
                 </Button>

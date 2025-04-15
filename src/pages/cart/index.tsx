@@ -19,46 +19,55 @@ const CartPage = () => {
   };
 
   if (cartItems.length === 0) {
-    return <Empty description="Giỏ hàng trống" className="mt-20" />;
+    return (
+      <div className="flex justify-center items-center h-[60vh]">
+        <Empty description="Giỏ hàng của bạn đang trống 😢" />
+      </div>
+    );
   }
 
   return (
     <div className="max-w-4xl mx-auto p-4 mt-10">
-      <Title level={2}>Giỏ hàng của bạn</Title>
-      {cartItems.map((item) => (
-        <Card key={item.id} className="mb-4 shadow-md rounded-xl">
-          <div className="flex gap-6 items-center">
-            <img
-              src={item.image}
-             
-              className="w-8 h-8 object-cover rounded-md" // Giảm kích thước hình ảnh
-            />
+      <Title level={2} className="text-center mb-6">
+        Giỏ hàng
+      </Title>
 
-            <div className="flex-1">
-              <Title level={4}>{item.name}</Title>
-              <Text>Giá: {item.price.toLocaleString()}₫</Text>
-              <br />
-              <Text className="mr-2">Số lượng:</Text>
-              <InputNumber
-                min={1}
-                value={item.quantity}
-                onChange={(value) => {
-                  if (typeof value === "number") {
-                    updateQuantity(item.id, value);
-                  }
-                }}
+      <div className="space-y-4">
+        {cartItems.map((item) => (
+          <Card key={item.id} className="shadow-sm rounded-xl">
+            <div className="flex items-center gap-4">
+              <img
+                src={item.image}
+                alt={item.name}
+                className="w-14 h-14!important object-cover rounded border"
               />
-              <br />
-              <Text strong>
-                Tổng: {(item.price * item.quantity).toLocaleString()}₫
-              </Text>
+              <div className="flex-1">
+                <Title level={5} className="mb-0">{item.name}</Title>
+                <Text>Giá: {item.price.toLocaleString()}₫</Text>
+                <div className="mt-1 flex items-center gap-2">
+                  <Text>Số lượng:</Text>
+                  <InputNumber
+                    min={1}
+                    value={item.quantity}
+                    onChange={(value) => {
+                      if (typeof value === "number") {
+                        updateQuantity(item.id, value);
+                      }
+                    }}
+                    size="small"
+                  />
+                </div>
+                <Text strong className="block mt-1 text-sm">
+                  Tổng: {(item.price * item.quantity).toLocaleString()}₫
+                </Text>
+              </div>
+              <Button danger size="small" onClick={() => removeFromCart(item.id)}>
+                Xóa
+              </Button>
             </div>
-            <Button danger onClick={() => removeFromCart(item.id)}>
-              Xóa
-            </Button>
-          </div>
-        </Card>
-      ))}
+          </Card>
+        ))}
+      </div>
 
       <Divider />
 

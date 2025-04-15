@@ -95,4 +95,6 @@ export const useAuth = ({ resource = "register" }) => {
       console.error(err);
     },
   });
+  
+  
 };

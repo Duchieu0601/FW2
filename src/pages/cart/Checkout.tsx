@@ -50,7 +50,7 @@ const Checkout = () => {
 
       message.success("Đặt hàng thành công!");
       clearCart();
-      navigate("");
+      navigate("/");
     } catch (err) {
       console.error(err);
       message.error("Có lỗi xảy ra khi đặt hàng!");
@@ -72,7 +72,7 @@ const Checkout = () => {
                   <img
                     src={item.image}
                     alt={item.name}
-                    className="w-20 h-20 rounded object-cover"
+                    className="w-14 h-14"
                   />
                   <div>
                     <p className="font-semibold">{item.name}</p>
@@ -130,7 +130,7 @@ const Checkout = () => {
             {paymentMethod === "qr" && (
               <div className="mb-4 text-center">
                 <img
-                  src="https://api.qrserver.com/v1/create-qr-code/?data=DUYSHOP_THANHTOAN"
+                  src="https://img.vietqr.io/image/970407-61060188882005-print.png?accountName=VU%20DUC%20HIEU"
                   alt="QR Code"
                   className="mx-auto w-40 h-40"
                 />
@@ -141,14 +141,12 @@ const Checkout = () => {
             )}
 
             {paymentMethod === "bank" && (
-              <div className="text-sm text-gray-600 mb-4">
-                <p>Ngân hàng: Vietcombank</p>
-                <p>Số tài khoản: 0123456789</p>
-                <p>Chủ tài khoản: Nguyễn Văn A</p>
-                <p>
-                  Nội dung: {form.getFieldValue("name")} - {form.getFieldValue("phone")}
-                </p>
-              </div>
+             <div className="text-sm text-gray-600 mb-4">
+             <p>Ngân hàng: Techcombank</p>
+             <p>Số tài khoản: 61060188882005</p>
+             <p>Chủ tài khoản: VU DUC HIEU</p>
+           </div>
+           
             )}
 
             <Button type="primary" htmlType="submit" className="bg-blue-500 mt-2">

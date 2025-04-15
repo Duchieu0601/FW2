@@ -55,7 +55,7 @@ function ProductList() {
         {/* Ô tìm kiếm sản phẩm */}
         <div style={{ maxWidth: "600px", margin: "0 auto 30px", textAlign: "center" }}>
           <Input.Search
-            placeholder="🔍 Tìm kiếm sản phẩm..."
+            placeholder=" Tìm kiếm sản phẩm..."
             allowClear
             enterButton
             size="large"
@@ -101,7 +101,7 @@ function ProductList() {
                   />
                   <div style={{ marginTop: "15px", textAlign: "center" }}>
                     <Button type="link" style={{ marginRight: "10px", fontWeight: "bold", color: "#1890ff" }}>
-                      <Link to={`/admin/product/edit/${product.id}`}>✏️ Sửa</Link>
+                      <Link to={`/admin/product/edit/${product.id}`}> Sửa</Link>
                     </Button>
                     <Popconfirm
                       title="Bạn có chắc muốn xóa?"
@@ -109,7 +109,7 @@ function ProductList() {
                       okText="Có"
                       cancelText="Không"
                     >
-                      <Button type="primary" danger>🗑 Xóa</Button>
+                      <Button type="primary" danger> Xóa</Button>
                     </Popconfirm>
                   </div>
                 </Card>
